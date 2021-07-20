@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+body {
+    background-color: #070707;
+    background-image: url(../images/45-degree-fabric-dark.png);
+    font-family: "raleway", sans-serif;
+}
+.hamburger {
+    top: 1.5px;
+}
+.container {
+    color: white;
+    align-items: center;
+}
+.heading-1 {
+    font-size: 60px;
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+}
+.testimonials {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 25px;
+    margin: 30px 80px;
+    align-items: center;
+    height: auto;
+}
+.testimonial {
+    flex-basis: 220px;
+    padding:0px;
+    border-radius: 10px;
+    justify-content: space-between;
+}
+.testimonial1 {
+    background-color: #252525;
+    padding: 20px;
+    border-radius: 0%;
+}.testimonial2 {
+    background-color: #191919;
+}
+.testimonial-sub {
+    align-content: stretch;
+    width: 45%;
+    float: left;
+    padding: 0px;
+}
+.about-alumni {
+    text-align: left;
+    padding: 20px;
+    line-height: 16pt;
+}
+.testimonial-img {
+    padding-left: 0px;
+}
+.testimonial .testimonial-img {
+    height: 220px;
+    width: 220px;
+    border-radius: 10%;
+    filter: grayscale(100%);
+    cursor: pointer;
+    transition: 400ms;
+}
+.testimonial .testimonial-img {
+    height: 120px;
+    width: 120px;
+    cursor: pointer;
+    transition: 400ms;
+}
+.testimonial:hover .testimonial-img {
+    filter: grayscale(0);
+}
+.alumni-name {
+    margin-top: 20px;
+    font-size: 17px;
+    padding-right:0px;
+}
+.testimonial .alumni-department {
+    font-size: 14px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    color: #ff9933ab;
+    padding: 0px;
+}
+.alumni-department {
+    float: left;
+}
+.testimonial:hover {
+    opacity: 1;
+}
+@media only screen and (max-width: 1150px) {
+    .testimonials {
+        flex-direction: column;
+    }
+    .testimonial {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .testimonial p {
+        text-align: left;
+        margin: 20px 60px 80px 60px;
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:600px) {
+    .testimonials {
+        display: inline-flex;
+        width: min-content;
+        justify-content: space-around;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-left: 0px;
+        align-content: stretch;
+    }
+    .testimonial {
+        margin: 0px;
+        flex-grow: 1;
+    }
+    .heading-1 {
+        font-size: 35px;
+        padding-top: 15%;
+        padding-bottom: 5%;
+        margin-left: -9%;
+    }
+}
+    
